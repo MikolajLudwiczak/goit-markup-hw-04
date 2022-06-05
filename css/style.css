@@ -120,12 +120,25 @@ body {
   margin-right: 46px;
 }
 
+.icon-contact {
+  fill: #afb1b8;
+}
+.icon-contact:active,
+.icon-contact:hover,
+.icon-contact:focus {
+  --color5: var(--brand-main-color);
+}
+
 /*Homepage*/
 .service {
   display: flex;
   min-height: 600px;
-  display: flex;
-  background: var(--brand-third-color);
+  background-image: linear-gradient(
+      0deg,
+      rgba(47, 48, 58, 0.4) 0%,
+      rgba(47, 48, 50, 0.4) 100%
+    ),
+    url(../images/service.jpg);
 }
 
 .service .container {
@@ -157,21 +170,42 @@ body {
   letter-spacing: 0.06em;
   color: var(--brand-second-color);
 }
+
 .asset {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
-  padding-left: 0;
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  width: 100%;
 }
 
 .asset-item {
   max-width: 270px;
+  margin-left: 15px;
+  margin-right: 15px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   list-style-type: none;
   color: #757575;
+}
+
+.asset-item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  list-style-type: none;
 }
 
 h1 {
@@ -268,6 +302,58 @@ h4 {
   color: var(--text-main-color);
 }
 
+.icon-team {
+  fill: #afb1b8;
+  margin-top: 16px;
+  margin-bottom: 18px;
+}
+
+.icon-team:active,
+.icon-team:hover,
+.icon-team:focus {
+  fill: var(--brand-second-color);
+  --color3: var(--brand-main-color);
+  cursor: pointer;
+}
+
+/*Nasi klienci*/
+.company-box {
+  text-align: center;
+}
+
+.company-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.company-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.icon-client {
+  fill: #afb1b8;
+}
+
+.company-item:active,
+.company-item:hover,
+.company-item:focus {
+  fill: var(--brand-main-color);
+  border-color: var(--brand-main-color);
+}
+
+.icon-client:active,
+.icon-client:hover,
+.icon-client:focus {
+  fill: var(--brand-main-color);
+  cursor: pointer;
+}
+
 /*Portfolio*/
 
 .button {
@@ -317,7 +403,6 @@ h4 {
   border: 0px;
 }
 
-/*Portfolio*/
 .buttons {
   margin-bottom: 50px;
 }
@@ -369,16 +454,28 @@ h4 {
 
 /*Footer*/
 .logo-footer {
+  display: flex;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-top: 0;
 }
 
 .foot {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .container {
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 215px;
+  padding-right: 215px;
 }
 
 .contact .container {
@@ -412,4 +509,46 @@ address {
 
 .footer-contact a {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: left;
+  list-style: none;
+  margin: 0;
+}
+
+.footer-social li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-footer {
+  padding-right: 10px;
+  fill: var(--brand-second-color);
+  --color3: rgba(255, 255, 255, 0.1);
+}
+
+.icon-footer:active,
+.icon-footer:hover,
+.icon-footer:focus {
+  --color3: var(--brand-main-color);
+  cursor: pointer;
+}
+
+.footer-social h3 {
+  text-align: left;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  color: var(--brand-second-color);
 }
