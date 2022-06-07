@@ -352,11 +352,12 @@ h4 {
 .company-item:focus {
   fill: var(--brand-main-color);
   border-color: var(--brand-main-color);
+  cursor: pointer;
 }
 
-.icon-client:active,
-.icon-client:hover,
-.icon-client:focus {
+.company-item:active svg,
+.company-item:hover svg,
+.company-item:focus svg {
   fill: var(--brand-main-color);
   cursor: pointer;
 }
@@ -497,11 +498,8 @@ h4 {
 }
 
 .footer .container {
-  display: inline-flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding-left: 215px;
-  padding-right: 215px;
+  display: flex;
+  justify-content: start;
 }
 
 .contact .container {
@@ -577,4 +575,8 @@ address {
   margin: 0;
   margin-bottom: 20px;
   color: var(--brand-second-color);
+}
+
+.social {
+  margin-top: 12px;
 }
